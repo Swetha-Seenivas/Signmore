@@ -180,8 +180,13 @@ p {
 	color: #202c59;
 }
 .dot {
-	color: #455bb0;
+	background-color: #455bb0;
+	height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	display: inline-block;
 	position: relative;
+	top: 40px;
 }
 .main__content {
 	width: 400px;
