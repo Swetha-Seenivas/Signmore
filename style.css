@@ -195,10 +195,6 @@ a {
 	color: var(--primary-color);
 }
 
-.space-around {
-	/* justify-content: space-evenly; */
-}
-
 .services {
 	margin: 42px 0px;
 	align-items: end;
