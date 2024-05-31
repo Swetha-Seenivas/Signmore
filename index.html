@@ -13,9 +13,9 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<main class="container container-md">
-			<nav class="main__nav flex">
-				<a aria-label="ServiceForge logo" class="main__logo" href="">
+		<main class="container">
+			<nav class="nav flex">
+				<a aria-label="ServiceForge logo" class="logo" href="">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="275"
@@ -45,10 +45,10 @@
 						/>
 					</svg>
 				</a>
-				<div class="main__nav-list">
-					<ul class="nav-list__menu flex" role="list">
+				<div class="nav-list">
+					<ul class="nav-menu flex" role="list">
 						<li role="listitem">
-							<a class="bold" href="" aria-label="Home menu">Home</a>
+							<a href="" aria-label="Home menu">Home</a>
 						</li>
 						<li role="listitem"><a href="" aria-label="Why menu">Why</a></li>
 						<li role="listitem">
@@ -61,7 +61,7 @@
 							<a href="" aria-label="Pricing menu">Pricing</a>
 						</li>
 					</ul>
-					<ul class="nav-list__user-menu flex" role="list">
+					<ul class="nav-user-menu flex" role="list">
 						<li role="listitem">
 							<a href="" aria-label="Log in to your account">Log in</a>
 						</li>
@@ -73,23 +73,23 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="main__container flex">
-				<div class="main__content">
+			<div class="flex">
+				<div class="hero-content">
 					<h1>Apps for the many<span class="dot">.</span></h1>
 					<p>
-						More than a hundred of service providers have their own app. <br />
-						It’s time to get yours!
+						More than a hundred of service providers have their own app. It’s
+						time to get yours!
 					</p>
 					<a class="primary-btn btn-lg" href="">Get your free account</a>
 				</div>
-				<div class="main__images">
+				<div class="relative">
 					<img
-						class="main__bg-img"
+						class="hero-bg-img"
 						src="./images/man-attending-call.png"
 						alt="Construction worker in a hard hat and safety vest talking on a cellphone beside a work van."
 					/>
 					<img
-						class="main__fg-img"
+						class="hero-fg-img"
 						src="./images/serviceforge-phones.png"
 						alt="Two smartphones displaying an app interface for ServiceForge, showing team member profiles and booking updates."
 					/>
@@ -97,14 +97,14 @@
 			</div>
 		</main>
 		<section class="secondary-container">
-			<div class="container container-xl">
-				<div class="align-center">
+			<div class="container">
+				<div class="text-center">
 					<h3>Your own Business app</h3>
-					<p class="main__p">
+					<p class="sub-context">
 						Create your own app in less than three weeks and help your customers
 						to reach you at any time.
 					</p>
-					<a class="main__a">
+					<a class="anchor-link">
 						Explore Industries
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -122,21 +122,19 @@
 				</div>
 				<ul class="flex services" role="list">
 					<li role="listitem">
-						<div class="img-gradient">
-							<div class="gradient"></div>
+						<div class="gradient">
 							<img
 								src="./images/construction-serviceforge.png"
 								alt="ACE Handyman Services app screen with messages and booking updates"
 							/>
 						</div>
 						<div class="service-details">
-							<h6>Construction</h6>
+							<h6 class="uppercase">Construction</h6>
 							<p>Ace Handyman</p>
 						</div>
 					</li>
 					<li role="listitem">
-						<div class="img-gradient">
-							<div class="gradient"></div>
+						<div class="gradient">
 							<img
 								src="./images/beauty-serviceforge.png"
 								alt="Bruce Masefield Hair app screen with messages and booking options."
@@ -144,39 +142,36 @@
 						</div>
 
 						<div class="service-details">
-							<h6>Beauty</h6>
+							<h6 class="uppercase">Beauty</h6>
 							<p>Bruce Masefield</p>
 						</div>
 					</li>
 					<li role="listitem">
-						<div class="img-gradient">
-							<div class="gradient"></div>
+						<div class="gradient">
 							<img
 								src="./images/restaurant-serviceforge.png"
 								alt="Mobile app interface showing messages, with a booking update and customer feedback, for a restaurant named BABA."
 							/>
 						</div>
-
 						<div class="service-details">
-							<h6>Restaurants</h6>
+							<h6 class="uppercase">Restaurants</h6>
 							<p>Baba</p>
 						</div>
 					</li>
 					<li role="listitem">
-						<div class="img-gradient">
-							<div class="gradient"></div>
+						<div class="gradient">
 							<img
 								src="./images/homeservices-serviceforge.png"
 								alt="Alfred home services app screen with messages and booking updates"
 							/>
 						</div>
 						<div class="service-details">
-							<h6>Homeservices</h6>
+							<h6 class="uppercase">Homeservices</h6>
 							<p>Alfred</p>
 						</div>
 					</li>
 				</ul>
-				<h4 class="mr-top-lg">The best tool you will ever need</h4>
+				<h4 class="mt-150">The best tool you will ever need</h4>
 				<ul class="flex tools" role="list">
 					<li role="listitem">
 						<svg
@@ -191,7 +186,7 @@
 								fill="#455BB0"
 							/>
 						</svg>
-						<a class="main__a">
+						<a class="anchor-link">
 							Mobile and Desktop
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -224,7 +219,7 @@
 								fill="#455BB0"
 							/>
 						</svg>
-						<a class="main__a">
+						<a class="anchor-link">
 							Instant booking
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +252,7 @@
 								fill="#455BB0"
 							/>
 						</svg>
-						<a class="main__a">
+						<a class="anchor-link">
 							Custom QR Code
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +285,7 @@
 								fill="#455BB0"
 							/>
 						</svg>
-						<a class="main__a">
+						<a class="anchor-link">
 							Customer Support
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -313,22 +308,19 @@
 				</ul>
 			</div>
 		</section>
-		<section class="container container-lg">
-			<div class="align-center">
+		<section class="container">
+			<div class="text-center">
 				<h3 class="primary-font-color">With your clients wherever they are</h3>
-				<p class="main__p">
+				<p class="sub-context">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna tellus
 					elit. Lorem ipsum dolor sit amet.
 				</p>
 			</div>
-			<div class="flex">
+			<div class="flex m-100">
 				<div class="side-container">
-					<h6>Expand your business</h6>
-					<h5>
-						Be on demand with your <br />
-						own customizable app
-					</h5>
-					<a class="main__a primary-color">
+					<h6 class="uppercase">Expand your business</h6>
+					<h5>Be on demand with your own customizable app</h5>
+					<a class="anchor-link primary-color">
 						Your Brand Design
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -343,11 +335,8 @@
 							/>
 						</svg>
 					</a>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur <br />
-						adipiscing elit. Nunc.
-					</p>
-					<a class="main__a primary-color">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.</p>
+					<a class="anchor-link primary-color">
 						Your Own QR Code
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -362,11 +351,8 @@
 							/>
 						</svg>
 					</a>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur <br />
-						adipiscing elit. Nunc.
-					</p>
-					<a class="main__a primary-color">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.</p>
+					<a class="anchor-link primary-color">
 						Managed Anywhere
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -381,10 +367,7 @@
 							/>
 						</svg>
 					</a>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur <br />
-						adipiscing elit. Nunc.
-					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.</p>
 				</div>
 				<img
 					src="./images/construction-img-grid.png"
@@ -392,24 +375,21 @@
 				/>
 			</div>
 		</section>
-		<section class="container container-sm">
-			<div class="flex">
+		<section class="container">
+			<div class="flex m-100">
 				<img
 					src="./images/mechanical.png"
 					alt="Design elements including a color palette, a grid with a toolbox icon, and text samples on an orange background"
 				/>
 				<div class="side-container">
-					<h6>Your brand</h6>
-					<h5>
-						Make your Brand <br />
-						Digital in no time
-					</h5>
+					<h6 class="uppercase">Your brand</h6>
+					<h5>Make your Brand Digital in no time</h5>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc,
 						aliquet sed in et velit mauris donec sed mattis. Ultrices nulla
 						sagittis gravida nunc enim nam.
 					</p>
-					<a class="main__a primary-color">
+					<a class="anchor-link primary-color">
 						How to digitalize my brand
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -427,19 +407,16 @@
 				</div>
 			</div>
 		</section>
-		<section class="container container-sm">
-			<div class="flex">
+		<section class="container">
+			<div class="flex m-100">
 				<div class="side-container">
-					<h5>
-						Customize your own app. <br />
-						Get your QR code.
-					</h5>
+					<h5>Customize your own app. Get your QR code.</h5>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc,
 						aliquet sed in et velit mauris donec sed mattis. Ultrices nulla
 						sagittis gravida nunc enim nam.
 					</p>
-					<a class="main__a primary-color">
+					<a class="anchor-link primary-color">
 						How to generate my QR Code
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -461,21 +438,21 @@
 				/>
 			</div>
 		</section>
-		<section class="container container-sm">
+		<section class="container">
 			<div class="flex">
 				<img
 					src="./images/booking-page.png"
 					alt="Bruce Masefield Hair app screen with appointment details and booking options"
 				/>
 				<div class="side-container">
-					<h6>Managed anywhere</h6>
+					<h6 class="uppercase">Managed anywhere</h6>
 					<h5>Focus on the things you love and let us handle the rest</h5>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc,
 						aliquet sed in et velit mauris donec sed mattis. Ultrices nulla
 						sagittis gravida nunc enim nam.
 					</p>
-					<a class="main__a primary-color">
+					<a class="anchor-link primary-color">
 						How to manage my app
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
