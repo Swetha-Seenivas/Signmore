@@ -204,6 +204,10 @@ body {
 	font-weight: 900;
 }
 
+.text-md {
+	font-size: 14px;
+}
+
 .text-end {
 	text-align: right;
 }
@@ -212,6 +216,10 @@ body {
 
 .flex {
 	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
 }
 
 .flex-column {
@@ -230,6 +238,22 @@ body {
 	justify-content: space-between;
 }
 
+.space-around {
+	justify-content: space-around;
+}
+
+.space-evenly {
+	justify-content: space-evenly;
+}
+
+.gap-x-5 {
+	gap: 0px 20px;
+}
+
+.gap-x-10 {
+	gap: 0px 40px;
+}
+
 /* Display */
 
 .relative {
@@ -244,10 +268,22 @@ body {
 	display: none;
 }
 
+.block {
+	display: block;
+}
+
 /* Margin */
 .auto {
 	display: block;
 	margin: 0px auto;
+}
+
+.mb-12 {
+	margin-bottom: 12px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
 }
 
 /* Width */
@@ -264,6 +300,10 @@ body {
 
 .py-36 {
 	padding: 36px 0px;
+}
+
+.py-40 {
+	padding: 40px 0px;
 }
 
 .pt-36 {
@@ -308,7 +348,30 @@ h4 {
 	width: 200px;
 }
 
+h5 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
 /* Class Selectors */
+
+.text-link {
+	text-decoration-line: underline;
+	cursor: pointer;
+}
+
+.container {
+	margin: 0px 20px;
+}
+
+.left-container {
+	width: inherit;
+}
+
+.left-margin {
+	margin-left: 20px;
+}
 
 .banner {
 	padding: 12px 20px;
@@ -324,10 +387,16 @@ h4 {
 	appearance: none;
 }
 
-.img {
+.hero-img {
 	right: 0px;
 	left: 0px;
 	width: 100%;
+}
+
+.hero-float-img {
+	float: right;
+	width: 320px;
+	height: 580px;
 }
 
 .primary-btn {
@@ -343,10 +412,6 @@ h4 {
 .description {
 	font-size: 18px;
 	margin-bottom: 30px;
-}
-
-.container {
-	margin: 0px 20px;
 }
 
 .menu {
@@ -365,12 +430,12 @@ h4 {
 
 .carousal {
 	overflow: auto;
+	padding: 0px 20px;
 }
 
 .carousal > li {
 	width: 260px;
-	height: 494pxx;
-	margin: 0px 20px;
+	height: 494px;
 }
 
 .carousal h3 {
@@ -391,7 +456,69 @@ h4 {
 	height: 60px;
 }
 
+.construction-img {
+	width: 100%;
+}
+
+.book-cover {
+	display: block;
+	margin: 0px auto;
+}
+
 .takeaway {
 	border-left: 2px solid var(--signm-color-white);
 	padding-left: 20px;
+}
+
+.footer-links > li {
+	width: 120px;
+}
+
+.footer-links li,
+.footer-links h5 {
+	margin-bottom: 20px;
+}
+
+.footer-links a {
+	font-size: 12px;
+}
+
+@media screen and (max-width: 760px) {
+	.hero-float-img {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.container {
+		margin: 0px 84px;
+	}
+
+	.left-margin {
+		margin-left: 84px;
+	}
+
+	.carousal {
+		padding: 0px 84px;
+	}
+
+	.carousal > li {
+		/* margin: 64px 20px; */
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.hero-img {
+		display: none;
+	}
+	.left-container {
+		width: 290px;
+	}
+	.construction-img {
+		width: 324px;
+		height: 324px;
+	}
+	.book-cover {
+		margin: 0px;
+	}
 }
