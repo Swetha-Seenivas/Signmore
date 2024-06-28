@@ -8,23 +8,36 @@
 	</head>
 	<body>
 		<header>
-			<div class="bg-signm-green flex align-center justify-end banner">
-				<img
-					class="banner-icon"
-					src="./images/phone-call-icon.png"
-					alt=""
-					srcset=""
-				/>
-				<p>Call 24/7 at <span class="bold">800-924-9679</span></p>
+			<div class="bg-signm-green">
+				<div class="container flex gap-x-4 banner justify-end">
+					<div class="flex align-center">
+						<img
+							class="banner-icon"
+							src="./images/phone-call-icon.png"
+							alt=""
+							srcset=""
+						/>
+						<p>Call 24/7 at <span class="bold">800-924-9679</span></p>
+					</div>
+					<div class="flex align-center hide lg-flex">
+						<img
+							class="banner-icon"
+							src="./images/profile.png"
+							alt=""
+							srcset=""
+						/>
+						<a class="nav-option" href="javascript:void">Login</a>
+					</div>
+				</div>
 			</div>
-			<nav class="container flex align-center space-between py-20">
+			<nav class="container py-20 flex align-center space-between">
 				<a href="javascript:void"
 					><img src="./images/Signmore-logo.svg" alt="" srcset=""
 				/></a>
-				<div class="flex align-center menu space-between">
+				<div class="flex align-center w-12 lg-hide space-between">
 					<a class="uppercase nav-option" href="javascript:void">Login</a>
-					<menu class="relative">
-						<label class="hamburger-menu">
+					<menu>
+						<label for="hamburger-toggle" class="hamburger-menu">
 							<div></div>
 							<div></div>
 							<div></div>
@@ -32,46 +45,171 @@
 						<input
 							class="hamburger-toggle absolute"
 							type="checkbox"
-							name=""
-							id=""
+							name="hamburger-toggle"
+							id="hamburger-toggle"
 						/>
-						<ul class="hide" role="list">
-							<li role="listitem"><a href="javascript:void">Why</a></li>
-							<li role="listitem">
-								<a href="javascript:void">Property 24/7</a>
-							</li>
-							<li role="listitem"><a href="javascript:void">Industries</a></li>
-							<li role="listitem"><a href="javascript:void">tools</a></li>
-						</ul>
+						<div class="hamburger-options">
+							<a
+								class="container inline-block flex py-20"
+								href="javascript:void"
+								><img src="./images/Signmore-logo.svg" alt="" srcset=""
+							/></a>
+							<ul class="container text-xl h-90 scroll" role="list">
+								<li class="mb-40" role="listitem">
+									<a class="uppercase" href="javascript:void">Why</a>
+									<ul role="listbox">
+										<li role="listitem">
+											<a href="javascript:void">Real People</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Giving Back</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Testimonials</a>
+										</li>
+									</ul>
+								</li>
+								<li class="mb-40" role="listitem">
+									<a class="uppercase" href="javascript:void">Property 24/7</a>
+									<ul role="listbox">
+										<li role="listitem">
+											<a href="javascript:void">24/7 Reception</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Call Answering</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Lead Capture</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">After Hours </a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Bilingual Reception</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Call Centre Solutions</a>
+										</li>
+									</ul>
+								</li>
+								<li class="mb-40" role="listitem">
+									<a class="uppercase" href="javascript:void">Industries</a>
+									<ul role="listbox">
+										<li role="listitem">
+											<a href="javascript:void">Real Estate Agents </a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Property Managers</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Property Investors</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Commercial Real Estate</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Brokers</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Lenders</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Developers</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Leasing Agents</a>
+										</li>
+									</ul>
+								</li>
+								<li class="mb-40" role="listitem">
+									<a class="uppercase" href="javascript:void">tools</a>
+									<ul role="listbox">
+										<li role="listitem">
+											<a href="javascript:void">Appointments</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Live Chat</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Video Tours</a>
+										</li>
+										<li role="listitem">
+											<a href="javascript:void">Mobile App</a>
+										</li>
+									</ul>
+								</li>
+								<li role="listitem">
+									<a href="javascript:void" class="uppercase">Login</a>
+								</li>
+							</ul>
+
+							<a class="container secondary-btn" href="javascript:void"
+								>Plans & Prices</a
+							>
+						</div>
 					</menu>
 				</div>
+				<ul
+					class="flex align-center space-between w-half nav-option hide lg-flex"
+					role="list"
+				>
+					<li class="uppercase" role="listitem">
+						<a href="javascript:void">Why</a>
+					</li>
+					<li class="uppercase" role="listitem">
+						<a href="javascript:void">Property 24/7</a>
+					</li>
+					<li class="uppercase" role="listitem">
+						<a href="javascript:void">Industries</a>
+					</li>
+					<li class="uppercase" role="listitem">
+						<a href="javascript:void">tools</a>
+					</li>
+					<li class="no-underline" role="listitem">
+						<a class="secondary-btn" href="javascript:void">Plans & Prices</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 		<main>
 			<picture>
 				<source
-					media="(min-width: 760px)"
+					media="(min-width: 1440px)"
 					srcset="./images/hero-img-web-view.jpg"
 				/>
+				<source
+					media="(max-width: 760px)"
+					srcset="./images/hero-img-tab-view.jpg"
+				/>
 				<img
-					class="hero-float-img"
+					class="hero-float-img hide md-block md-right lg-block"
 					src="./images/hero-img-tab-view.jpg"
 					alt=""
 				/>
 			</picture>
-			<div class="container py-20 left-container">
-				<h1 class="uppercase py-36">Homes for all</h1>
+			<div class="container w-38 py-6">
+				<h1 class="uppercase py-36">
+					Homes<br />
+					for all
+				</h1>
 				<p class="description">
 					SignMore is donating 1% of revenue to help build homes for those who
 					need them most.
 				</p>
-				<a class="primary-btn" href="javascript:void">Plans & Prices</a>
+				<a class="primary-btn lg-hide" href="javascript:void">Plans & Prices</a>
 			</div>
-			<img class="hero-img" src="./images/hero-img-mob-view.jpg" alt="" />
+			<img
+				class="hero-img md-hide"
+				src="./images/hero-img-mob-view.jpg"
+				alt=""
+			/>
 		</main>
 		<section>
-			<div class="container py-20 left-container">
-				<h2 class="py-36">Giving Back</h2>
+			<div class="container w-38 py-6 lg-pb-0">
+				<h2 class="py-36">
+					Giving<br />
+					Back
+				</h2>
 				<p class="description">
 					We've teamed up with several non-profit organizations who are making
 					the world feel like home.
@@ -81,13 +219,13 @@
 					difference to local communities.
 				</p>
 			</div>
-			<div class="container py-20">
-				<div class="w-full flex space-between">
+			<div class="container py-20 lg-flex justify-end">
+				<div class="w-full flex space-between md-gap-14 md-w-30">
 					<img src="./images/left-arrow.svg" alt="" srcset="" />
 					<img src="./images/right-arrow.svg" alt="" srcset="" />
 				</div>
 			</div>
-			<ul class="w-full carousal flex gap-x-10" role="list">
+			<ul class="w-full py-1 pl scroll carousal flex gap-x-4" role="list">
 				<li class="flex flex-column space-between mb-40" role="listitem">
 					<h4>1 MISSION</h4>
 					<p class="description">
@@ -284,9 +422,12 @@
 			</ul>
 		</section>
 		<section class="bg-signm-blue">
-			<div class="container py-20 flex flex-wrap space-between align-center">
-				<div class="left-container">
-					<h3 class="uppercase pb-64">We're listening</h3>
+			<div class="container flex flex-wrap space-between py-6">
+				<div class="flex flex-column space-between py-20 w-38">
+					<h3 class="uppercase pb-20">
+						We're<br />
+						listening
+					</h3>
 					<p class="description">
 						Do you know a cause or organization that could benefit from extra
 						support?
@@ -302,21 +443,24 @@
 			</div>
 		</section>
 		<section class="bg-signm-green">
-			<div class="container py-20 flex flex-wrap space-between">
-				<div class="left-container">
-					<h2 class="uppercase pb-64">Lifelong Learning</h2>
-					<p class="description">
+			<div class="container flex flex-wrap space-between py-6 py-container">
+				<div class="w-38 h-40 flex flex-column space-between">
+					<h2 class="uppercase">
+						Lifelong <br />
+						Learning
+					</h2>
+					<p class="description py-6">
 						We're passionate about Learning, Sharing & Giving Back.
 					</p>
 				</div>
-				<div class="left-container">
+				<div>
 					<img
-						class="book-cover py-36"
+						class="book-cover"
 						src="./images/mindset-book.jpg"
 						alt=""
 						srcset=""
 					/>
-					<p class="takeaway description">
+					<p class="description takeaway">
 						Carol Dwek's transformative book unlocks strategies to move from a
 						fixed mindsetinto a growth mindset.
 					</p>
@@ -324,34 +468,38 @@
 			</div>
 		</section>
 		<footer class="container">
-			<a href="javascript:void" class="block py-40"
-				><img src="./images/Signmore-logo.svg" alt="" srcset=""
-			/></a>
-			<ul role="list" class="flex gap-x-5 mb-40">
-				<li role="listitem">
-					<a href="javascript:void"
-						><img src="./images/linkedin-logo.png" alt=""
-					/></a>
-				</li>
-				<li role="listitem">
-					<a href="javascript:void"
-						><img src="./images/facebook-logo.png" alt=""
-					/></a>
-				</li>
-				<li role="listitem">
-					<a href="javascript:void"
-						><img src="./images/instagram-logo.png" alt=""
-					/></a>
-				</li>
-			</ul>
-			<p class="mb-12">because</p>
-			<img
-				src="./images/anywhereworks-logo.png"
-				alt=""
-				srcset=""
-				class="mb-40"
-			/>
-			<ul role="list" class="flex flex-wrap space-between footer-links">
+			<div>
+				<a href="javascript:void" class="block py-40"
+					><img src="./images/Signmore-logo.svg" alt="" srcset=""
+				/></a>
+				<div class="md-hide lg-block">
+					<ul role="list" class="flex gap-x-2 mb-40 align-start">
+						<li role="listitem">
+							<a href="javascript:void"
+								><img src="./images/linkedin-logo.png" alt=""
+							/></a>
+						</li>
+						<li role="listitem">
+							<a href="javascript:void"
+								><img src="./images/facebook-logo.png" alt=""
+							/></a>
+						</li>
+						<li role="listitem">
+							<a href="javascript:void"
+								><img src="./images/instagram-logo.png" alt=""
+							/></a>
+						</li>
+					</ul>
+					<p class="mb-12">because</p>
+					<img
+						src="./images/anywhereworks-logo.png"
+						alt=""
+						srcset=""
+						class="mb-40"
+					/>
+				</div>
+			</div>
+			<ul role="list" class="flex flex-wrap space-between gap-x-1 footer-links">
 				<li role="listitem">
 					<h5 class="uppercase">Why</h5>
 					<ul role="listbox">
@@ -420,32 +568,77 @@
 						<li role="listitem">
 							<a href="javascript:void">Plans & Prices</a>
 						</li>
-						<li role="listitem"><a href="javascript:void">Login</a></li>
+						<li role="listitem"><a href="javascript:void">nav-option</a></li>
 						<li role="listitem"><a href="javascript:void">Contact Us</a></li>
 					</ul>
 				</li>
 			</ul>
-			<div class="flex gap-x-5 mb-40">
-				<img src="./images/pledge-people-logo.png" alt="" srcset="" />
-				<p class="text-md">
-					We pledge to keep every patient interaction human.
-					<a class="text-link" href="javascript:void">Learn more</a>
-				</p>
+			<div class="w-full flex flex-column md-row space-between">
+				<div>
+					<div class="hide md-block lg-hide">
+						<ul role="list" class="flex gap-x-2 mb-40 align-start">
+							<li role="listitem">
+								<a href="javascript:void"
+									><img src="./images/linkedin-logo.png" alt=""
+								/></a>
+							</li>
+							<li role="listitem">
+								<a href="javascript:void"
+									><img src="./images/facebook-logo.png" alt=""
+								/></a>
+							</li>
+							<li role="listitem">
+								<a href="javascript:void"
+									><img src="./images/instagram-logo.png" alt=""
+								/></a>
+							</li>
+						</ul>
+						<p class="mb-12">because</p>
+						<img
+							src="./images/anywhereworks-logo.png"
+							alt=""
+							srcset=""
+							class="mb-40"
+						/>
+					</div>
+					<div class="flex gap-x-2 mb-40">
+						<img src="./images/pledge-people-logo.png" alt="" srcset="" />
+						<p class="text-md">
+							We pledge to keep every patient interaction human.
+							<a class="text-link" href="javascript:void">Learn more</a>
+						</p>
+					</div>
+				</div>
+				<div>
+					<h5 class="uppercase mb-12">Stay connected anywhere</h5>
+					<ul class="flex flex-column md-col lg-row">
+						<li>
+							<img
+								class="block mb-12"
+								src="./images/apple-store.png"
+								alt=""
+								srcset=""
+							/>
+						</li>
+						<li>
+							<img
+								class="block mb-12"
+								src="./images/google-play.png"
+								alt=""
+								srcset=""
+							/>
+						</li>
+						<li>
+							<img
+								class="block mb-12"
+								src="./images/desktop.png"
+								alt=""
+								srcset=""
+							/>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<h5 class="uppercase mb-12">Stay connected anywhere</h5>
-			<img
-				class="block mb-12"
-				src="./images/apple-store.png"
-				alt=""
-				srcset=""
-			/>
-			<img
-				class="block mb-12"
-				src="./images/google-play.png"
-				alt=""
-				srcset=""
-			/>
-			<img class="block mb-12" src="./images/desktop.png" alt="" srcset="" />
 		</footer>
 	</body>
 </html>
